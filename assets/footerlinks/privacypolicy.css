@@ -1,0 +1,11 @@
+.h1{
+    font-size: 85px;
+}
+h2{
+    text-transform: uppercase;
+}
+p{
+    font-size: 17px;
+    font-weight: bold;
+    color: grey;
+}

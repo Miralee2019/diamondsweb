@@ -1,0 +1,10 @@
+<FilesMatch "^\.ht">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<IfModule authz_core_module>
+    Require all Granted
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>

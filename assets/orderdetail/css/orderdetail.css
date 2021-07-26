@@ -1,0 +1,7 @@
+table{
+    display: flex !important;
+    justify-content: center !important;
+}
+.order_detail h4{
+    text-align: center;
+}

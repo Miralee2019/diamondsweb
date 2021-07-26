@@ -1,0 +1,469 @@
+input{
+    outline: none;
+}
+select{
+    outline: none;
+}
+textarea{
+    outline: none;
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/*===============accordian css start================*/
+input{
+    outline: none;
+}
+.accordion p{
+    float: left;
+    margin: 0;
+    color: #8c8c8c;
+}
+.accordion .btn_code{
+    background-color: #001a6f;
+    color: #fff;
+    transition: color 0.35s ease-in-out,background-color 0.35s ease-in-out,border-color 0.35s ease-in-out,box-shadow 0.35s ease-in-out;
+}
+.accordion .btn_code:hover{
+    background-color: #fff;
+    color: #001a6f;
+}
+.accordion .btn-link{
+    padding: 0 6px;
+    font-size: 16px;
+    color: #001a6f !important;
+}
+.accordion .btn-link:hover{
+    color: #8c8c8c !important;
+}
+.accordion .card{
+    border: none;
+    border-radius: unset;
+    margin-bottom: 30px;
+}
+.accordion .card-header{
+    border-bottom: unset;
+    border-top: 3px solid black;
+}
+.accordion .email_input{
+    width: 100%;
+    max-width: 500px;
+    float: left;
+}
+.accordion .email_input input{
+    padding: 1.375rem 0.75rem;
+}
+.accordion .pass_input{
+    width: 100%;
+    max-width: 500px;
+    float: right;
+}
+.accordion .pass_input input{
+    padding: 1.375rem 0.75rem;
+}
+.accordion .card-body button{
+    width: 100%;
+    max-width: 160px;
+    /* border: 1px solid black; */
+    padding: 10px 12px;
+    /* border-radius: 32px; */
+    border-radius: 5px;
+    float: left;
+    margin: 20px 0;
+}
+.accordion .card-body{
+    border: 1px solid #d3ced2;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.accordion .card-body .form-check{
+    margin-left: 180px;
+    font-weight: bold;
+}
+.accordion .card-body .pass_lost{
+    width: 100%;
+    margin-top: 30px;
+}
+.accordion .card-body{
+    padding: 1.375rem 0.75rem;
+}
+.accordion .card-body .coupon_code{
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    margin-right: 20px;
+}
+.accordion .card-body .coupon_code input{
+    padding: 1.375rem 0.75rem;
+    margin: 20px 0;
+}
+/*===============accordian css end================*/
+/*===============form css start================*/
+.heading {
+    color: #8c8c8c;
+    margin: 0 10px;
+}
+.checkout_form h4{
+    position: relative;
+    margin-bottom: 30px;
+    color: #8c8c8c;
+}
+.checkout_form h4:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #001a6f;
+    left: 0;
+    top: 38px;
+    position: absolute;
+}
+.checkout_form label{
+    font-size: 14px;
+    color: #8c8c8c;
+}
+.checkout_form input{
+    width: 100%;
+    border: 1px solid #8c8c8c;
+    /* border-radius: 24px; */
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+.checkout_form .fname{
+    float: left;
+    width: 100%;
+    max-width: 246px; 
+    margin-bottom: 10px;
+}
+.checkout_form .lname{
+    float: right;
+    width: 100%;
+    max-width: 246px;
+    margin-bottom: 10px;
+}
+.checkout_form .email{
+    float: left;
+    width: 100%;
+    max-width: 246px; 
+    margin-bottom: 10px;
+}
+.checkout_form .phone{
+    float: right;
+    width: 100%;
+    max-width: 246px;
+    margin-bottom: 10px;
+}
+.checkout_form .country{
+    /* clear: both; */
+    width: 100%;
+    max-width: 174px;
+    float: left;
+    margin-bottom: 10px;
+}
+.checkout_form select{
+    width: 100%;
+    max-width: 168px;
+    padding: 6px 8px;
+    border: 1px solid #8c8c8c;
+    /* border-radius: 17px; */
+    border-radius: 5px;
+}
+
+.checkout_form .state{
+    width: 100%;
+    max-width: 175px;
+    float: left;
+    margin-bottom: 10px;
+}
+.checkout_form .city{
+    width: 100%;
+    max-width: 174px;
+    float: left;
+    margin-bottom: 10px;
+}
+.checkout_form .address{
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+}
+.checkout_form .address textarea{
+    width: 100%;
+    border: 1px solid #8c8c8c;
+    /* border-radius: 24px; */
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+.checkout_form .company{
+    float: left;
+    width: 100%;
+    max-width: 246px; 
+    margin-bottom: 10px;
+}
+.checkout_form .zip{
+    float: right;
+    width: 100%;
+    max-width: 246px; 
+    margin-bottom: 30px;
+}
+.checkout_form .button{
+    margin-bottom: 10px; 
+}
+.checkout_form .group .button{
+    background-color: #001a6f;
+    color: #fff;
+    transition: color 0.35s ease-in-out,background-color 0.35s ease-in-out,border-color 0.35s ease-in-out,box-shadow 0.35s ease-in-out;
+}
+.checkout_form .group .button:hover{
+    color: #001a6f;
+    background-color: #fff;
+    border: 1px solid #001a6f;
+}
+/*===============form css end================*/
+
+/*===============order section css start================*/
+
+.your_order table{
+    font-size: 14px;
+}
+.your_order table td, th{
+    color: #606060;
+}
+.your_order .form-check input{
+    float: left;
+    width: 100%;
+    max-width: 20px;
+}
+.your_order .payment .h6{
+    float: left;
+    margin: 16px 5px;
+    font-size: 14px;
+}
+.your_order .payment .pay_img{
+    float: left;
+}
+.your_order .payment .paypal_info{
+    float: left;
+    margin: 10px 4px;
+    font-size: 14px;
+}
+.your_order .payment .paypal_info a{
+    color: #606060 !important;
+}
+.your_order .payment .paypal_info a:hover{
+    color: #337ab7 !important;
+}
+.your_order .payment img{
+    width: 150px;
+}
+/*===============order section css end================*/
+
+
+@media (max-width: 319px){
+    .checkout_form .city{
+        max-width: 166px;
+    }
+    .accordion .btn-link{
+        font-size: 14px;
+        padding: 0;
+    }
+   
+}
+@media (min-width: 320px) and (max-width: 410px){
+    .accordion .btn-link{
+        font-size: 14px;
+        padding: 0;
+    }
+    .checkout_form .lname{
+        float: none;
+    }
+    .checkout_form .phone{
+        float: none;
+    }
+    .checkout_form .state{
+        max-width: 268px;
+    }
+    .checkout_form .city{
+        max-width: 268px;
+    }
+    .checkout_form .country{
+        max-width: 268px;
+    }
+    .checkout_form select{
+        max-width: 246px;
+    }
+    .checkout_form .address{
+        max-width: 246px;
+    }
+    .checkout_form .zip{
+        float: none;
+    }
+    
+}
+@media (min-width: 411px) and (max-width: 576px) {
+    .accordion .btn-link{
+        font-size: 14px;
+        padding: 0;
+    }
+    .checkout_form .button{
+        max-width: 100% !important;
+    }
+    .checkout_form .group{
+        max-width: 366px;
+    }
+    .checkout_form .lname{
+        float: none;
+    }
+    .checkout_form .phone{
+        float: none;
+    }
+    .checkout_form .state{
+        max-width: 366px;
+    }
+    .checkout_form .city{
+        max-width: 366px;
+    }
+    .checkout_form .country{
+        max-width: 366px;
+    }
+    .checkout_form select{
+        max-width: 366px;
+    }
+    .checkout_form .address{
+        max-width: 366px;
+    }
+    .checkout_form .zip{
+        float: none;
+    }
+  
+}
+@media (min-width: 577px) and (max-width: 767.98px){
+    .checkout_form .fname{
+        max-width: 226px;
+    }
+    .checkout_form .lname{
+        max-width: 226px;
+    }
+    .checkout_form .email{
+        max-width: 226px;
+    }
+    .checkout_form .phone{
+        max-width: 226px;
+    }
+    .checkout_form .country{
+        width: 100%;
+        max-width: 160px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .state{
+        width: 100%;
+        max-width: 160px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .city{
+        width: 100%;
+        max-width: 160px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .company{
+        max-width: 226px;
+    }
+    .checkout_form .zip{
+        max-width: 226px;
+    }
+   
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .checkout_form .fname{
+        max-width: 314px;
+    }
+    .checkout_form .lname{
+        max-width: 314px;
+    }
+    .checkout_form .email{
+        max-width: 314px;
+    }
+    .checkout_form .phone{
+        max-width: 314px;
+    }
+    .checkout_form .country{
+        width: 100%;
+        max-width: 220px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .state{
+        width: 100%;
+        max-width: 220px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .city{
+        width: 100%;
+        max-width: 220px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form select{
+        max-width: 200px;
+    }
+    .checkout_form .company{
+        max-width: 314px;
+    }
+    .checkout_form .zip{
+        max-width: 314px;
+    }
+   
+    
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .checkout_form .fname{
+        max-width: 434px;
+    }
+    .checkout_form .lname{
+        max-width: 434px;
+    }
+    .checkout_form .email{
+        max-width: 434px;
+    }
+    .checkout_form .phone{
+        max-width: 434px;
+    }
+    .checkout_form .country{
+        width: 100%;
+        max-width: 300px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .state{
+        width: 100%;
+        max-width: 300px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form .city{
+        width: 100%;
+        max-width: 300px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .checkout_form select{
+        max-width: 280px;
+    }
+    .checkout_form .company{
+        max-width: 434px;
+    }
+    .checkout_form .zip{
+        max-width: 434px;
+    }
+    .link_section div{
+        margin: 0 !important;
+    }
+  
+}
+@media (min-width: 1200px) and (max-width: 1326px){
+    
+}

@@ -1,0 +1,1303 @@
+.row {
+    margin-left: 0 !important;
+    margin-right: 0!important;
+}
+
+body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans', sans-serif
+}
+
+.login-box {
+    width: 100%;
+    /* margin: auto; */
+    max-width: 626px;
+    min-height: 756px;
+    position: relative;
+    /* background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center; */
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    margin-bottom: 30px;
+}
+
+.login.login_area {
+    top: 20% !important;
+}
+
+.login-snip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    /* background: #c5c5c5 */
+    /* background: rgba(0, 77, 77, .9) */
+}
+
+.login-snip .login,
+.login-snip .sign-up-form {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+    display: none
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+    text-transform: uppercase
+}
+
+.login-snip .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent
+}
+
+.login-snip .sign-in:checked+.tab,
+.login-snip .sign-up:checked+.tab {
+    color: #8c8c8c;
+    border-color: #001a6f
+}
+
+.login-space {
+    min-height: 565px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d
+}
+
+.login-space .group {
+    margin-bottom: 15px
+}
+
+
+/* .login-space .group .input:active{
+    border: 1px solid #001a6f;
+}
+.login-space .group .input:focus{
+    border: 1px solid #001a6f;
+} */
+
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button {
+    width: 100%;
+    color: #fff;
+    display: block
+}
+
+.login-space .group .input,
+.login-space .group .button {
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    /* background: rgb(121 119 119); */
+    background-color: #bfbcbc;
+    outline: none;
+}
+
+.login-space .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle
+}
+
+.login-space .group .label {
+    color: #000;
+    font-size: 12px
+}
+
+.login-space .group .button {
+    background: #001a6f
+}
+
+.login-space .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1)
+}
+
+.login-space .group label .icon:before,
+.login-space .group label .icon:after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all .2s ease-in-out 0s
+}
+
+.login-space .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group .check:checked+label {
+    color: #8c8c8c
+}
+
+.login-space .group .check:checked+label .icon {
+    background: #1161ee
+}
+
+.login-space .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg)
+}
+
+.login-space .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg)
+}
+
+.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+    transform: rotate(0)
+}
+
+.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+    transform: rotate(0)
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.hr {
+    height: 2px;
+    margin: 10px 0 15px 0;
+    background: rgba(255, 255, 255, .2)
+}
+
+.card {
+    width: 626px;
+    /* left: 100px; */
+    border: none !important;
+}
+
+::placeholder {
+    color: #8c8c8c
+}
+
+.sign-up-form .fname {
+    float: left;
+    margin-right: 16px;
+    width: 100%;
+    max-width: 232px;
+}
+
+.sign-up-form .lname {
+    float: left;
+    width: 100%;
+    max-width: 232px;
+}
+
+.sign-up-form .email {
+    width: 100%;
+    max-width: 480px;
+}
+
+.sign-up-form .pass {
+    float: left;
+    margin-right: 16px;
+    width: 100%;
+    max-width: 232px;
+}
+
+.sign-up-form .phone {
+    float: left;
+    width: 100%;
+    max-width: 232px;
+}
+
+.sign-up-form .country {
+    float: left;
+    width: 100%;
+    max-width: 142px;
+    margin-right: 20px;
+}
+
+.sign-up-form .state {
+    float: left;
+    width: 100%;
+    max-width: 142px;
+    margin-right: 20px;
+}
+
+.sign-up-form .city {
+    float: left;
+    width: 100%;
+    max-width: 142px;
+    margin-right: 20px;
+}
+
+.sign-up-form .address {
+    width: 100%;
+    max-width: 480px;
+}
+
+.sign-up-form .company {
+    float: left;
+    margin-right: 16px;
+    width: 100%;
+    max-width: 232px;
+}
+
+.sign-up-form .zip {
+    float: left;
+    width: 100%;
+    max-width: 232px;
+}
+
+.mobile_view {
+    display: none;
+}
+
+.fa-3x {
+    font-size: 45px !important;
+}
+
+@media (max-width: 319px) {
+    .card {
+        display: none !important;
+    }
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    /* .mobile_login_form .username input{
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 2px;
+    }
+    .mobile_login_form .password input{
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 2px;
+    }*/
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .foot .forgot {
+        margin: 0 20px;
+    }
+    .mobile_login_form .foot .registered {
+        margin: 0 20px;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .mobile_login_form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 410px) {
+    .card {
+        display: none !important;
+    }
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    .mobile_login_form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_login_form .foot .forgot {
+        float: left;
+        font-size: 14px;
+    }
+    .mobile_login_form .foot .registered {
+        float: right;
+        font-size: 14px;
+    }
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
+
+@media (min-width: 411px) and (max-width: 576px) {
+    .card {
+        display: none !important;
+    }
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_login_form .foot .forgot {
+        margin: 0 20px;
+    }
+    .mobile_login_form .foot .registered {
+        margin: 0 20px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767.98px) {
+    .card {
+        display: none !important;
+    }
+    .mobile_view {
+        display: block;
+    }
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    .mobile_login_form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form .foot .forgot {
+        margin: 0 40px;
+    }
+    .mobile_login_form .foot .registered {
+        margin: 0 40px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+        max-width: 460px;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        max-width: 152px;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        max-width: 142px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        max-width: 152px;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        max-width: 142px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        max-width: 152px;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        max-width: 142px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        max-width: 460px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        max-width: 240px;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+        max-width: 220px;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+        display: none !important;
+    }
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    .mobile_login_form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_login_form .foot .forgot {
+        margin: 0 40px;
+    }
+    .mobile_login_form .foot .registered {
+        margin: 0 40px;
+    }
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+        max-width: 590px;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        max-width: 590px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .mobile_signup {
+        display: none;
+    }
+    .mobile_signup.active {
+        display: block;
+    }
+    .card {
+        display: none !important;
+    }
+    .loginview_mobile {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+    .mobile_view {
+        display: block;
+        padding: 20px;
+    }
+    .mobile_login_form {
+        /* width: 100%;
+        max-width: 440px;
+        margin: 0 auto; */
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_login_form .foot .forgot {
+        margin: 0 40px;
+    }
+    .mobile_login_form .foot .registered {
+        margin: 0 40px;
+    }
+    .mobile_login_form .group input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        padding: 4px 10px;
+        border-radius: 3px;
+        margin-bottom: 14px;
+    }
+    .mobile_login_form .check {
+        margin: 10px 0;
+    }
+    .mobile_login_form .group .button {
+        background-color: #001a6f;
+        color: #fff;
+    }
+    .signupview_mobile {
+        width: 100%;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+    .mobile_signup_form {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+        /* background-color: #cecdcd; */
+    }
+    .mobile_signup_form input {
+        border: 1px solid #8c8c8c;
+        border-radius: 3px;
+        padding: 4px 10px;
+    }
+    .mobile_signup_form .fname {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .fname input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .lname {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .lname input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .email {
+        width: 100%;
+    }
+    .mobile_signup_form .email input {
+        width: 100%;
+        max-width: 590px;
+    }
+    .mobile_signup_form .pass {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .pass input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .phone {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .phone input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .Country {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .Country select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .state {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .state select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .city {
+        width: 100%;
+        max-width: 200px;
+        float: left;
+    }
+    .mobile_signup_form .city select {
+        width: 100%;
+        max-width: 190px;
+        padding: 4px 10px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .address {
+        width: 100%;
+    }
+    .mobile_signup_form .address textarea {
+        width: 100%;
+        max-width: 590px;
+        border: 1px solid #8c8c8c;
+    }
+    .mobile_signup_form .company {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .company input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .zip {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+    }
+    .mobile_signup_form .zip input {
+        width: 100%;
+        max-width: 290px;
+    }
+    .mobile_signup_form .button {
+        width: 100%;
+        margin: 20px 0;
+        background-color: #001a6f;
+        color: #fff;
+        transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    }
+    .mobile_signup_form .button:hover {
+        background-color: #fff;
+        color: #001a6f;
+    }
+}
